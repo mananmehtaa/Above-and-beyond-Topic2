@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- This is an HTML document -->
+<html>
+<head>
+	<title>Smart Lighting Application</title>
+	<!-- Styling for the page -->
+    
+
+	<style>
+		/* Styling for the body element */
+		body {
+			font-family: Arial, sans-serif; /* Set the font family */
+			font-size: 20px; /* Set the font size */
+			margin: 0; /* Remove margins */
+			padding: 0; /* Remove padding */
+		}
+
+        .sliding-text {
+			overflow: hidden;
+			animation: slide 5s infinite;
+		}
+		
+		@keyframes slide {
+			0% {
+				transform: translateX(0%);
+			}
+			100% {
+				transform: translateX(100%);
+			}
+		}
+ 
+	/* Styling for the h1 element */
+	h1 {
+		text-align: left; /* Center align the heading */
+		margin: 20px 0; /* Add margin top and bottom */
+	}
+    body {
+			background-color: goldenrod;
+		}
+	
+	/* Styling for the table element */
+	table {
+		width: 80%; /* Set the width to 80% */
+		margin: 0 auto; /* Center align the table */
+		border-collapse: collapse; /* Collapse borders between table cells */
+		border: 1px solid #ccc; /* Add a border */
+	}
+	
+	/* Styling for the th and td elements */
+	th, td {
+		padding: 10px; /* Add padding */
+		border: 1px solid #ccc; /* Add a border */
+	}
+	
+	/* Styling for the light class */
+	.light {
+		width: 20px; /* Set the width to 20px */
+		height: 20px; /* Set the height to 20px */
+		display: inline-block; /* Display inline */
+		margin-right: 10px; /* Add margin right */
+		border: 1px solid #ccc; /* Add a border */
+		border-radius: 50%; /* Make it circular */
+	}
+</style>
+</head>
+<body>
+	<!-- Heading for the page -->
+	<h1>Smart Lighting Application</h1>
+    <div class="sliding-text">
+		<h1>Choose your light and colour pallets </h1>
+	</div>
+
+ 
+	<!-- Table for displaying the lights and color pickers -->
+	<table>
+		<!-- Table header -->
+		<tr>
+            <tr style="background-color: white;">
+			<th>Light</th>
+             
+			<th>Color</th>
+           
+		</tr>
+		<!-- Table row for Light 1 -->
+		<tr>
+			<td>
+				<label>
+					<input type="checkbox" class="light-checkbox" value="1"> Light 1
+				</label>
+			</td>
+			<td>
+				<!-- Display the Light 1 color and color picker -->
+				<div class="light" id="light-1"></div>
+				<input type="color" class="color-picker" id="color-picker-1">
+			</td>
+		</tr>
+		<!-- Table row for Light 2 -->
+		<tr>
+			<td>
+				<label>
+					<input type="checkbox" class="light-checkbox" value="2"> Light 2
+				</label>
+			</td>
+			<td>
+				<!-- Display the Light 2 color and color picker -->
+				<div class="light" id="light-2"></div>
+				<input type="color" class="color-picker" id="color-picker-2">
+			</td>
+		</tr>
+		<!-- Table row for Light 3 -->
+		<tr>
+			<td>
+				<label>
+					<input type="checkbox" class="light-checkbox" value="3"> Light 3
+				</label>
+			</td>
+			<td>
+				<!-- Display the Light 3 color and color picker -->
+				<div class="light" id="light-3"></div>
+				<input type="color" class="color-picker" id="color-picker-3">
+            </td>
+            </tr>
+
+
+
